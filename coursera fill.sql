@@ -1,39 +1,43 @@
 USE coursera;
 
-INSERT INTO user_status (name) VALUES ('студент'),('преподаватель'),('корпоративное обучение');
-
-INSERT INTO target (name) VALUES ('user'),('catalog'),('course');
+INSERT INTO users_status (name) VALUES ('студент'),('преподаватель'),('корпоративное обучение');
 
 INSERT INTO sex  (name) VALUES ('мужской'),('женский');
 
-INSERT INTO town (name) VALUES ('Москва'),('Санкт_петербург'),('Владивосток'),('Пекин'),('Токио'),
+INSERT INTO towns (name) VALUES ('Москва'),('Санкт_петербург'),('Владивосток'),('Пекин'),('Токио'),
 ("Лондон"),('Париж'),('Вена'),('Сеул');
 
-INSERT INTO employment (name) VALUES
+INSERT INTO employments (name) VALUES
  ('Полная занятость (не менее 35 часов в неделю)'),
  ('Не полная занятость (менее 35 часов в неделю)'),
  ('Пенсионер'),
  ('Безработный');
  
- INSERT INTO status_worker (name) VALUES
+ INSERT INTO statuses_worker (name) VALUES
  ('Бизнес'),
  ('Компьютерные науки'),
  ('Финансы'),
  ('Другое');
  
-  INSERT INTO level_education (name) VALUES
+ INSERT INTO levels (name) VALUES
+ ('Начальный'),
+ ('Средний'),
+ ('Сложный'),
+ ('Наивысший');
+ 
+  INSERT INTO levels_education (name) VALUES
  ('Бакалавр'),
  ('Магистр'),
  ('Атестат о общем среднем образовании'),
  ('Атестат о средне специальном образовании'),
  ('Специалист');
  
-  INSERT INTO confidesion (name) VALUES
+  INSERT INTO confidentiality (name) VALUES
  ('только я'),
  ('сообщество Coursera'),
  ('люди в internet');
  
-  INSERT INTO language (name) VALUES
+  INSERT INTO languages (name) VALUES
  ('Английский'),
  ('Русский'),
  ('Французский'),
@@ -41,7 +45,7 @@ INSERT INTO employment (name) VALUES
  ('Китайский'),
  ('Корейский');
  
-  INSERT INTO catalog (name, catalog_id) VALUES
+  INSERT INTO catalogs (name, catalog_id) VALUES
  ('Гуманитарные науки и искусство',0),
  ('Бизнес',0),
  ('Компьютерные науки',0),
